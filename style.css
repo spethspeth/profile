@@ -1,0 +1,151 @@
+body {
+  background-image: url("images/background.png");
+  background-repeat: repeat;
+  width: 900px;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+#header {
+  color: red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  text-align: center;
+  font-family: impact;
+  width: 100%;
+  margin: auto;
+}
+
+#coding:hover {
+  color: green;
+  transition: 0.5s;
+}
+
+#gaming:hover {
+  color: indigo;
+  transition: 0.5s;
+}
+
+#beer:hover {
+  color: gold;
+  transition: 0.5s;
+}
+
+#food:hover {
+  color: red;
+  transition: 0.5s;
+}
+
+#mainimg {
+  border-radius: 50%;
+  border-color: grey;
+  border-width: 3px;
+  border-style: dotted;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  padding: 10px;
+}
+
+#social {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+marquee {
+  background-color: white;
+  text-align: left;
+}
+
+#guestbook {
+  background-color: white;
+}
+
+.form {
+  display: block;
+}
+
+#cardsdiv {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 10px;
+  background-position: center;
+}
+
+.card h4 {
+  background-color: white;
+  border-radius: 5px;
+  height: 18px;
+  width: 80%;
+}
+
+#codecard {
+  background-image: url("images/lawnmowerman.jpg");
+}
+
+#gamecard {
+  background-image: url("images/toejamearl.gif");
+}
+
+#beercard {
+  background-image: url("images/beer.jpg");
+}
+
+#foodcard {
+  background-image: url("images/food.jpg");
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  body {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  body {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  body {
+    width: 300px;
+  }
+  #fire {
+    display: none;
+  }
+  .card h4 {
+    display: none;
+  }
+  #guestbook {
+    display: none;
+  }
+}
